@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
-            this.NextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WelcomeLabel
@@ -48,16 +47,6 @@
             this.SplashTimer.Interval = 3000;
             this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
             // 
-            // NextButton
-            // 
-            this.NextButton.Location = new System.Drawing.Point(647, 507);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(125, 42);
-            this.NextButton.TabIndex = 2;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -65,7 +54,6 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.ControlBox = false;
-            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -85,6 +73,5 @@
 
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Timer SplashTimer;
-        private System.Windows.Forms.Button NextButton;
     }
 }

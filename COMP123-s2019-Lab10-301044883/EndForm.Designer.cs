@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.BackButton = new System.Windows.Forms.Button();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackButton
@@ -41,12 +42,22 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // WelcomeLabel
+            // 
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.Location = new System.Drawing.Point(244, 36);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(289, 31);
+            this.WelcomeLabel.TabIndex = 1;
+            this.WelcomeLabel.Text = "Welcome to End Form!";
+            // 
             // EndForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.WelcomeLabel);
             this.Controls.Add(this.BackButton);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -58,11 +69,13 @@
             this.Text = "End Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EndForm_FormClosing);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Label WelcomeLabel;
     }
 }

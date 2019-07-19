@@ -30,7 +30,6 @@
         {
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.NextButton = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WelcomeLabel
@@ -52,23 +51,12 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // BackButton
-            // 
-            this.BackButton.Location = new System.Drawing.Point(12, 507);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(125, 42);
-            this.BackButton.TabIndex = 2;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
@@ -87,7 +75,6 @@
 
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Button NextButton;
-        private System.Windows.Forms.Button BackButton;
     }
 }
 
